@@ -12,6 +12,17 @@
 }
 html {
   font-family: 'MiddleEarth', sans-serif;
+  overflow-y: scroll;
+}
+html::-webkit-scrollbar {
+  display: block;
+  width: 7px;
+}
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: #E4C241;
 }
 img {
   width: 100%;
@@ -27,6 +38,7 @@ main {
   z-index: 99;
 }
 .container {
+  position: relative;
   max-width: 1180px;
   width: 95%;
   margin: auto;
@@ -113,45 +125,31 @@ video {
   mix-blend-mode: darken;
 }
 /* main */
-.main__fixed {
+.slidebox {
   position: fixed;
+  left: 0;
+  right: 0;
+}
+.slidebox__slide {
   height: inherit;
   width: 100%;
   height: 100vh;
+  transition: all 1s;
+  background: url('../img/map.jpg') no-repeat center;
 }
 .brotherhood {
   width: 100%;
   position: fixed;
   bottom: 0;
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
   transition: all 1.5s;
 }
 .map, .gondor, .shir, .rivendel, .karadras, .moria, .lorien, .anduin {
-  z-index: 1;
+  position: absolute;
+  width: 30%;
+  padding-top: 100px;
+  transition: all 1.5s;
+  color: #E4C241;
   opacity: 0;
-}
-.map {
-  background: url('../img/map.jpg') no-repeat center;
-}
-.gondor {
-  background: url('../img/gondor.jpg') no-repeat center;
-}
-.shir {
-  background: url('../img/shir.jpg') no-repeat center;
-}
-.rivendel {
-  background: url('../img/rivendel.jpg') no-repeat center;
-}
-.karadras {
-  background: url('../img/karadras.jpg') no-repeat center;
-}
-.moria {
-  background: url('../img/moria.jpg') no-repeat center;
-}
-.lorien {
-  background: url('../img/lorien.jpg') no-repeat center;
-}
-.anduin {
-  background: url('../img/anduin.jpg') no-repeat center;
 }
