@@ -95,6 +95,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0.75;
 }
 video {
   position: fixed;
@@ -129,6 +130,7 @@ video {
   position: fixed;
   left: 0;
   right: 0;
+  opacity: 0.25;
 }
 .slidebox__slide {
   height: inherit;

@@ -20,13 +20,13 @@ document.addEventListener('scroll', () => {
 
   if (scroll == 0) {
     logoTitle.style.transform = 'scale(1)';
-    logo.style.opacity = 1;
-    slidebox.style.opacity = 0;
+    logo.style.opacity = 0.75;
+    slidebox.style.opacity = 0.25;
   }
   if (scroll >= 100) {
     logoTitle.style.transform = 'scale(1.5)';
     logo.style.opacity = 1 - scroll * scrollOp;
-    slidebox.style.opacity = -0.25 + scroll * scrollOp;
+    slidebox.style.opacity = 0 + scroll * scrollOp;
   }
   if (scroll >= 500 && scroll < 600) {
     slideboxText.style.opacity = '';
