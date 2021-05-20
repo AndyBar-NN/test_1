@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       shir.style.opacity = -1.6 + scroll * scrollOp;
     } else {
       gondor.style.top = '';
+      shir.style.opacity = '';
     }
     if (scroll >= 2600) {
       slideboxText[2].style.opacity = '0.85';
@@ -68,60 +69,65 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     if (scroll >= 2700) {
-      shir.style.top = 0 - (scroll - 2700) + 'px';
+      shir.style.left = 0 - (scroll - 2700) + 'px';
       rivendel.style.opacity = -2.7 + scroll * scrollOp;
     } else {
-      shir.style.top = '';
+      shir.style.left = '';
+      rivendel.style.opacity = '';
     }
-    if (scroll >= 3700) {
+    if (scroll >= 4700) {
       slideboxText[3].style.opacity = '0.85';
     } else {
       slideboxText[3].style.opacity = '';
     }
 
-    if (scroll >= 3800) {
-      rivendel.style.top = 0 - (scroll - 3800) + 'px';
-      karadras.style.opacity = -3.8 + scroll * scrollOp;
-    } else {
-      rivendel.style.top = '';
-    }
     if (scroll >= 4800) {
+      rivendel.style.left = 0 - (scroll - 4800) + 'px';
+      karadras.style.opacity = -4.8 + scroll * scrollOp;
+    } else {
+      rivendel.style.left = '';
+      karadras.style.opacity = '';
+    }
+    if (scroll >= 6800) {
       slideboxText[4].style.opacity = '0.85';
     } else {
       slideboxText[4].style.opacity = '';
     }
 
-    if (scroll >= 4900) {
-      karadras.style.top = 0 - (scroll - 4900) + 'px';
-      moria.style.opacity = -4.9 + scroll * scrollOp;
+    if (scroll >= 6900) {
+      karadras.style.left = 0 - (scroll - 6900) + 'px';
+      moria.style.opacity = -6.9 + scroll * scrollOp;
     } else {
-      karadras.style.top = '';
+      karadras.style.left = '';
+      moria.style.opacity = '';
     }
-    if (scroll >= 5900) {
+    if (scroll >= 8900) {
       slideboxText[5].style.opacity = '0.85';
     } else {
       slideboxText[5].style.opacity = '';
     }
 
-    if (scroll >= 6000) {
-      moria.style.top = 0 - (scroll - 6000) + 'px';
-      lorien.style.opacity = -6 + scroll * scrollOp;
+    if (scroll >= 9000) {
+      moria.style.left = 0 - (scroll - 9000) + 'px';
+      lorien.style.opacity = -9 + scroll * scrollOp;
     } else {
-      moria.style.top = '';
+      moria.style.left = '';
+      lorien.style.opacity = '';
     }
-    if (scroll >= 7000) {
+    if (scroll >= 11000) {
       slideboxText[6].style.opacity = '0.85';
     } else {
       slideboxText[6].style.opacity = '';
     }
 
-    if (scroll >= 7100) {
-      lorien.style.top = 0 - (scroll - 7100) + 'px';
-      anduin.style.opacity = -7.1 + scroll * scrollOp;
+    if (scroll >= 11100) {
+      lorien.style.left = 0 - (scroll - 11100) + 'px';
+      anduin.style.opacity = -11.1 + scroll * scrollOp;
     } else {
-      lorien.style.top = '';
+      lorien.style.left = '';
+      anduin.style.opacity = '';
     }
-    if (scroll >= 8100) {
+    if (scroll >= 13100) {
       slideboxText[7].style.opacity = '0.85';
     } else {
       slideboxText[7].style.opacity = '';

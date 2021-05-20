@@ -29,9 +29,23 @@ html::-webkit-scrollbar-thumb {
 img {
   width: 100%;
 }
+button {
+  font-family: 'MiddleEarth', sans-serif;
+  font-size: 10px;
+  padding: 10px 20px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 25px;
+  transition: all 0.5s;
+}
+button:hover {
+  background: #E4C241;
+}
 main {
   background: #000;
-  height: 1000vh
+  height: 1500vh
 }
 .header {
   position: fixed;
@@ -84,7 +98,7 @@ main {
   margin-left: 50px;
 }
 .menu__data {
-  max-width: 230px;
+  max-width: 270px;
   width: 100%;
   display: flex;
   justify-content: space-between;
